@@ -34,3 +34,7 @@ The API listens on port 3000 by default. Set `PORT` to use another port.
 Create a task with JSON such as `{ "title": "Write docs", "description": "API guide", "userId": "user-1" }`. Updates may contain `title`, `description`, `completed`, or `userId`. The `User` interface defines `id`, `name`, and `email`; `Task.userId` can refer to a user ID. This sample does not manage users or check whether a user ID exists.
 
 Errors have a JSON `error` message. Invalid input returns `400`, missing tasks and routes return `404`, and unexpected failures return `500`.
+
+## AI use
+
+OpenAI Codex assisted with the initial project setup, TypeScript interfaces, task service, HTTP routes, tests, and this README. Codex ran the TypeScript check and automated tests to verify the implementation. The project maintainer is responsible for reviewing the code and deciding when to publish it.
